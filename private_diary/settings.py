@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'diary.apps.DiaryConfig',
 ]
 
 MIDDLEWARE = [
@@ -130,7 +131,7 @@ LOGGING = {
             'handlers': ['console'],
             'level': 'INFO',
         },
-        # dairyアプリケーションが利用するロガー
+        # diaryアプリケーションが利用するロガー
         'diary': {
             'handlers': ['console'],
             'level': 'DEBUG',
